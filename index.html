@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+ div {
+	 color:#60C;
+	}
+</style>
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/ramos.jpeg','imagenes/engrillado.jpeg','imagenes/monumental.jpeg','imagenes/calle.JPG')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1><i>semana santa</i></h1>
+      </div>
+      <div data-role="main" class="ui-content">
+          <div>
+          <center><img src="imagenes/cartelsemanasanta.png" width="375" height="308">
+          </center>
+          </div>
+          </div>
+          
+<div>
+    <ul id="lista" data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>significado de semana santa</h2>
+    
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>domingo de pascua</h2>
+       
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>como se establece la fecha de semana santa</h2>
+        
+         </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+         <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>celebracion en atlixco</h2>
+        
+         </a>
+         </li> 
+         <li class="ui-first-child ui-last-child">
+         <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>iztapalapa</h2>
+         
+         </a>
+         </li>
+       </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+       <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <div>
+      <h4>Aplicacion dos</h4>
+      <h4>lopez flores oscar</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>significado de semana santa</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+        <p>Semana Santa, conocida como semana mayor, es un período de 7 días que comienza con el Domingo de Ramos y culmina con el Domingo de Resurrección. Con la Semana Santa, el cristiano conmemora el Triduo Pascual, es decir, los momentos de la Pasión, la Muerte y la Resurrección de Jesucristo.</p>
+        <br>
+        <center><img src="imagenes/cristo.jpg"></center>
+        <br>
+        <P>
+        La Semana Santa está precedida por la Cuaresma que se refiere al tiempo de preparación donde se recuerda los 40 días de Jesucristo en el desierto. Las celebraciones centrales de la Semana Santa son: Jueves Santo, Viernes Santo, Sábado Santo y Domingo de Resurrección.</p>
+        <center><img src="imagenes/cuaresma.jpg" width="300" height="181"></center>
+        
+        <br>
+        <P>La Semana Santa, es el tiempo para dedicarse a la oración y reflexionar en Jesucristo, en los momentos del Triduo Pascual, quien con su infinita misericordia, decide tomar el lugar del hombre y recibir el castigo para liberarlo de los pecados. Asimismo, es el tiempo ideal para el ser humano meditar sobre sus acciones y los cambios que debe realizar para acercarse más a Dios y cumplir con sus mandamientos.</p>
+        <br>
+        <center><img src="imagenes/orando.jpg"</center>
+        <br>
+        <P>
+        Durante la Semana Santa, el católico cumple con diversos actos, como: procesiones, escenificación del drama de la muerte y pasión de Cristo. Los penitentes se someten a duras cargas como símbolo de su auto sacrificio y, en el día Viernes Santo, los fieles deben de guardar ayuno y abstenerse de comer carne.</p>
+        <br>
+        <center><img src="imagenes/procesion.jpg"></center>
+        <br>
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>saber mas...</h1>
+          <p> La Semana Santa va precedida por la Cuaresma, que finaliza en la Semana de Pasión donde se celebra:</p>
+                 <br>
+            <h1>domingo de ramos</h1>
+            <p>Domingo de Ramos es el último día de la Cuaresma y el primer día de Semana Santa. En el Domingo de Ramos, los cristianos conmemoran la entrada de Jesús en Jerusalén, montado en un asno, aclamado como hijo de Dios, días antes de su pasión, muerte y resurrección.</p>
+            <h1>Jueves Santo</h1>
+<p>
+Como tal, el Jueves Santo celebra la última cena de Jesús de Nazaret con sus discípulos, la institución de la eucaristía, la orden sacerdotal y, el lavatorio de pies. En este día, los católicos realizan la visita de los siete templos o iglesias, con el objetivo de agradecer a Dios el don de la eucaristía y sacerdocio.
+</p>
+<h1>Viernes Santo</h1>
+<p>
+El Viernes Santo, recuerda la Pasión de Cristo, momento de su crucifixión en el Calvario, por salvar al hombre del pecado y darle vida entera. Se celebra con un viacrucis y con la adoración de la Cruz.
+</p>
+<h1>Sábado Santo</h1>
+<p>
+Se conoce como Sábado Santo el día entre la muerte y la resurrección de Jesús. En este día, se lleva a cabo una vigilia pascual, en la cual se acostumbra bendecir el agua y encender las velas en señal de la Resurrección de Jesús.
+</p>
+<h1>Domingo Santo</h1>
+<p>
+El Domingo Santo, conocido como Domingo de Pascua. En el Domingo Santo, se conmemora la resurrección de Jesucristo al tercer día después de su crucifixión y, su primera aparición a los discípulos. Este día es de suma alegría para los fieles y, es interpretado como la esperanza de una nueva vida.<p>
+            <br>
+            <div>
+           <img src="imagenes/semana_santa.jpg" width="300" height="181">
+          </div>
+        </div>
+        </div>
+        </div>
+        <div data-role="footer" data-theme="a">
+          <h4>oscar lopez flores</h4>
+        </div>
+     </div>
+     </div>  
+     
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>domingo de pascua</h1>
+   </div>
+   <div data-role="content" align="center">
+      
+        <p>El "Domingo de Pascua" es una fiesta móvil, el día varía cada año y no se fija en relación al calendario civil, y sucede después de la primera luna llena en el inicio de la primavera en el hemisferio Norte. La Pascua siempre se celebra entre el 22 de Marzo y el 25 de Abril, se celebra en varios países y en cada uno posee un nombre diferente, como por ejemplo: los portugueses la llaman Páscoa, los italianos la llaman Pasqua, y los franceses Pâques.
+
+El término de Pascua remite principalmente a la fiesta de la Resurrección, que también es llamada a veces Pascua florida, pero también se usa para referirse a otras tres celebraciones cristianas: la Navidad (25 de Diciembre), la Epifanía o Adoración de los Magos (6 de Enero) y Pentecostés, la venida del Espíritu Santo (cincuenta días después de la Resurrección).
+
+Los primeros cristianos, que eran judíos, celebraban la Pascua de Resurrección a la par cronológica que la Pascua judía, hasta que en el Primer Concilio de Nicea (en el 325 d. C.) se separó la celebración de la Pascua judía de la cristiana, quitando a esta los elementos hebreos pero dejaron el carácter móvil de la fiesta recordando que Cristo resucitó en la Pascua hebrea.
+
+Según las Sagradas Escrituras, Dios ha dado a los cristianos "un nuevo nacimiento a una esperanza viva por la resurrección de Jesucristo de entre los muertos". Los cristianos, por la fe en el poder de Dios, han de discernir espiritualmente con Jesús resucitado cómo se puede caminar en una nueva forma de vida.</p>
+  <center><img src="imagenes/pascua.jpg" width="259" height="194"></center>
+  <div data-role="collapsible" data-content-theme="false">
+          <h1>saber mas...</h1>
+           <p>Símbolos de la Pascua
+
+Uno de los símbolos de la Pascua es el conejo. Este animal se convirtió en un símbolo porque en la antigüedad, en el hemisferio Norte, la celebración fue precisamente a finales del invierno y principios de la primavera, cuando los animales aparecían en los campos con sus cachorros, era la época de la fertilidad.
+
+El huevo también es un símbolo de la Pascua, representa el inicio de la vida. En varios países se regalan huevos de chocolate a los amigos, deseándoles un buen paso hacia una vida feliz</p>
+<center><img src="imagenes/conejo.png" width="202" height="249"></center>
+      </div>
+      <div data-role="footer" data-theme="a">
+         <h4>oscar lopez flores</h4>
+      </div>
+     </div>
+</div> 
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>como se establece la fecha</h1>
+  </div>
+  <div data-role="content" align="center">
+    <p>Probablemente usted habrá notado que la fecha de la Semana Santa varía considerablemente de un año al siguiente. Esta fecha se escoge a partir de una fórmula establecida por el Emperador Romano Constantino el Grande y el Concilio de Nicea en 325 d. C. Usted puede usar la fórmula para verificar la fecha de Pascua cada año.
+
+Asian lily
+En primer lugar debe hallar el equinocio vernal, o primer día de primavera ( alrededor del 21- 22 de marzo ), en un calendario que incluya datos astronómicos básicos. Después busque la siguiente luna llena, normalmente está indicada en una esquina del calendario. La Semana Santa caerá el domingo siguiente.</p>
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+          <h1>calendario</h1>
+           <center><img src="imagenes/fecha.jpg"></center>
+  </div>
+  <div data-role="footer" data-theme="a">
+      <h4>oscar lopez flores</h4>
+    </div>
+   </div>
+</div> 
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>celebracion en atlixco</h1>
+  </div>
+  <div data-role="content" align="center">
+    <p>en atlixco se celebra la semana santa igual que en otros lugares</p>
+       <p>la semana santa inicia con el domingo de ramos. Queremos celebrar o conmemorar la entrada triunfal de Jesús a Jerusalén, entonces aquí nosotros vamos hacer misas el domingo. En la iglesia de san agustin, vamos a llevar a cabo la bendición de las palmas”</p>
+       <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/ramos.jpeg',1)"><img src="imagenes/cartelsemanasanta.png" width="375" height="308" id="Image13"></a></p>
+        
+       <p>tambien como cada año se llevarán a cabo los ya tradicionales engrillados que recorren las principales calles del municipio de Atlixco con pesadas cadenas y espinas clavadas en el cuerpo. Esto tendrá lugar el día viernes santo a las diez de la mañana, partiendo de la iglesia de la tercera orden.</p>
+       <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/engrillado.jpeg',1)"><img src="imagenes/cartelsemanasanta.png" width="375" height="308" id="Image14"></a></p>
+      
+    <p>tambien se construyo un tapete monumental de “Flores de Primavera” en el zocalo de el municipio, el cual fue hecho con más de 160 mil plantas y con imágenes alusivas a esta temporada de Semana Santa, y otro con diseños representativos de Atlixco.</p>
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/monumental.jpeg',1)"><img src="imagenes/cartelsemanasanta.png" width="375" height="308" id="Image15"></a></p>
+       
+    <p>tambien se realizaron los tradicionales tapetes en las calles de atlixco</p>
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/tapetecalle.jpeg',0)"><img src="imagenes/cartelsemanasanta.png" width="375" height="308" id="Image16"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/calle.JPG',1)"><img src="imagenes/cartelsemanasanta.png" width="375" height="308" id="Image17"></a></p>
+    <p>&nbsp;</p>
+       
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+          <h1>saber mas...</h1>
+           <p> Atlixco cuenta con servicios turísticos, una gran infraestructura hotelera y una amplia gama de zonas donde puede degustar la gastronomía propia de la entidad, desde sus restaurantes hasta la zona de mercados.</p>
+  <div data-role="footer" data-theme="a">
+      <h4>oscar lopez flores</h4>
+    </div>
+   </div>
+</div>                                                        
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>iztapalapa</h1>
+  </div>
+  <div data-role="content" align="center">
+    <p>En Iztapalapa tiene lugar una ceremonia, fiesta y representación de la Pasión, que no responde ni a una narración sacra, ni a un teatro tradicional: es una expresión de múltiples aportaciones que se funde en una particular sincretización. Los misioneros utilizaron el teatro para catequizar a los antiguos mexicanos y desterrar así las prácticas religiosas anteriores. Las escenificaciones de la Pasión, conmovían profundamente a los espectadores; así, el teatro de los evangelizadores actuó en favor de la cristianización. Del pasado llegan las voces que amalgaman en el presente una forma particular de sincretismo, dondelas viejas costumbres, los componentes internos y externos del drama, se llenan de nuevos contenidos sin desalojar completamente a las anteriores.</p>
+       <br>
+       <img src="imagenes/iztapalapa.jpg" width="360" height="306">
+    <p>EI escenario general   
+
+Iztapalapa, una de las 16 delegaciones que constituyen el Distrito Federal, ha sustituido sus canales, chinampas y trajineras con verduras y flores, por ejes viales y el Metro. Tiene en el Cerro de la Estrella, en sus templos, plazas y jardines de Ia cabecera, los espacios sagrados donde se escenifica cada año la representación ritual por excelencia. La coexistencia de Iztapalapa con la gran urbe, no ha logrado borrar Ias viejas costumbres; sus habitantes renuevan sus lazos de amistad, de compadrazgo y vecindad, de pertenencia e identidad con el barrio y con Ia localidad en las distintas fiestas de su calendario, pero es en la Semana Santa cuando éstos aparecen con mayor fuerza. 
+
+Los moradores de los ocho barrios: La Asunción, San Ignacio, Santa Bárbara, San Lucas, San Pablo, San Miguel, San Pedro y San José, conviven entre la modernidad y la tradición: los que mantienen un ancestral apego a la tierra y los que llegan y demandan un lugar donde vivir. Comparten una costumbre heredada de muchos años, un deseo de mantener la unidad, a través de la cooperación y el esfuerzo colectivo para representar, con gran realismo, la Pasión de Jesucristo en una fiesta que permite la reafirmación y Ia cohesión cultural de sus residentes.
+
+En los barrios se eligen a los mayordomos; éstos organizan las fiestas, entre ellas, la del Señor de Ia Cuevita; la de San Lucas -conocido popularmente como San Luquitas, patrono de Iztapalapa-, que se celebra el 18 de octubre, con feria, danzantes y a veces octava, y en diciembre la de la Virgen de Guadalupe. En los festejos dedicados a los santos de cada una de las ocho capillas, se levantan arcos de madera adornados con flores y semillas en las entradas de los atrios y de los templos. El Señor de la Cuevita eligió el pueblo, "ya no se quiso ir"; por esta razón le dedicaron un templo y le tienen especial devoción. En la tercera década del siglo pasado, una epidemia de cólera azotó a la población; la creencia popular atribuyó a la divina imagen el cese de la mortandad. En agradecimiento a tan prodigiosa intervención, se inicia la escenificación de la Pasión, con actores del pueblo, y año con año se repite hasta hoy. La ceremonia, fiesta y representación de la Semana Santa, vuelca lo popular hacia lo sagrado, en un hecho que es por un lado civil y por otro religioso. Las autoridades eclesiásticas apoyan estos actos masivos, aunque no los aceptan como totalmente litúrgicos; más bien "dejan hacer" al pueblo, que escenifica desde hace más de 150 años Ia Pasión de Cristo. 
+
+Los episodios más importantes tienen lugar el Domingo de Ramos con la Procesión y la Bendición de las Palmas; el Jueves Santo en el Jardín Cuitláhuac, y el Viernes Santo con la secuencia de la sentencia, los azotes, la coronación de espinas y el Vía Crucis que culmnina en el Cerro de la Estrella con la crucifixión. Al conocerse los días en que va a caer la Semana Mayor, comienzan los preparativos y se selecciona a los protagonistas del drama, quienes inician los ensayos desde enero. EI comité organiza dor también tiene que ver con los escenarios y la coordinación de los movimientos de los personajes en los diferentes lugares donde hay representaciones. Así mismo, concerta con las autoridades de la Delegación la suspensión deI tráfico a determinadas horas en los días señalados, las calles por donde pasarán las procesiones, la seguridad de las multitudes que se concentran en las calles, las plazas y los jardines (donde además se establecen los puestos de comida, de antojitos, de diversiones, los juegos mecánicos, todo lo que conforma la feria).   </p>
+<center><img src="imagenes/esenario.jpg" width="360" height="306"></center>
+<p>El drama   
+
+El Domingo de Ramos, las casas y las calles se llenan de flores, las campanas se echan a vuelo, y un ángel con un niño inician la procesión que avanza lentamente. Los cientos de nazarenos llevan adornos de bandas blancas sobre las túnicas moradas; las vírgenes y las mujeres del pueblo adornan sus cabezas con coronas de flores, la Virgen, la Magdalena, llevan atuendos únicos. Por momentos Iztapalapa se transforma en Jerusalén, la multitud se dirige al barrio de San Lucas para que el sacerdote bendiga las palmas, los ramos de manzanilla, romero y laurel (éstas se guardan, pues la gente les atribuye poderes curativos). Hay risas cuando se reciben en la cara las gotas de agua bendita; en el atrio se mezclan los olores de los puestos de comida, los gritos de los vendedores, la música de los juegos mecánicos: el pueblo mezcla lo bíblico con lo actual. 
+
+El Jueves Santo, los adornos en las calles son de color blanco y morado; los actores llegan al lugar donde han ensayado; llena de flores y frutas está la cárcel que Cristo ocupará más tarde. De una casa, sale la procesión que inician el niñoy el ángel, después las vírgenes, Jesús, los nazarenos, los sacerdotes y dignatarios romanos, flanqueados por los soldados. La procesión recorre las calles de los ocho barrios, y llega hasta la iglesia del Señor de la Cuevita, donde los presentes quieren tocar la urna y pedir gracias. Los nazarenos, que suman cientos, ahora llevan una corona de espinas con flores en la cabeza. Después de la alocución del obispo en la iglesia, continúa la escena de la última Cena en el Jardín Cuitláhuac; sigue el Lavatorio de los Pies; el Prendimiento, y la Oración del Huerto. Los parlamentos no coinciden con la Sagrada Escritura, se han transformado al correr de los años según el gusto de losparticipantes; lo mismo sucede con otros episodios que los lugareños han agregado. 
+
+El Viemes Santo congrega multitudes; la presencia de los encargados de la seguridad y de los primeros auxilios a los visitantes es muy evidente. Llevan a Cristo de la cárcel a la explanada,donde hay una columna; ahí se suceden varios episodios. La gente se estremece conmovída por la representación, cuando Jesús vestido de blanco es azotado con unas ramas teñidas de rojo. El rumor aumenta cuando la muchedumbre inicia el recorrido al Calvario-Cerro. La subida es difícil para los penitentes, actores y espectadores que quieren presenciar la escena; algunos se conforman con los periscopios de cartón adquiridos allí mismo. Todos deben llegar al lugar de las tres caídas, del encuentro con la Verónica, la Samaritana y las santas mujeres.   
+
+La procesión avanza lentamente, entre los árboles, en medio de sollozos, lamentos, lágrimas, desmayados y gritos de quienes ofrecen su mercancÍa, desde comida y sombreros, hasta refrescos y aparatos para ver mejor el espectáculo. Los soldados romanos, los más de mil nazarenos que llevan sus cruces a cuestas, los judíos, se entremezclan con los espectadores, las santas mujeres, los apóstoles. Todos ellos, que han estado en todos los momentos, llegan hasta el lugar donde están las tres cruces. La actuación del Cristo, que llena de fervor a los espectadores e imparte intensa emoción a todas las ceremonias, llega a la culminación con la Crucifixión. En el lugar sagrado del cerro, en la cruz más grande se coloca a Jesús. 
+
+La mujer que hace el papel de la Virgen, vive sus mejores momentos cuando "Dolorosa" recibe el cuerpo del crucificado; le habla y lo conduce hasta donde se inicia, en la tarde, la Procesión del Silencio. Por las calles de los ocho barrios llevan una imagen del Señor de la Cuevita que cargan unos jóvenes encapuchados. La gente que ha vivido intensamente el drama de la Pasión regresa a sus casas. Con el tiempo, la representación ha cambiado: de los atrios de los templos al cerro, de las imágenes y Cristos-niños a los jóvenes cuidadosamente seleccionados por su tipo y estatura, de los parlamentos originalmente hablados ahora cantados en algunos episodios. Han ocurrido transformaciones en las actuaciones, vestuarios, pelucas y maquillajes; en las escenografías y en la extensión del recorrido, aunque los elementos básicos se mantienen a través de los años.  Suspendida durante la Revolución, cuentan los lugareños que el propio general Zapata prestó los caballos necesarios para su realización. 
+
+La iglesia ahora alienta una representación paralela, diferente a la popular, que considera no está apegada a los textos bíblicos; es de hecho, el reconocimiento de dos puntos de vista: por una parte el de la tradición escrita y sancionada, la litúrgica en el interior del templo, y por otra la celebración callejera que va más allá de una escenificación, pues en ella convergen los ideales, las esperanzas de acabar con muchas de las dificultades de la vida; es más que teatro, es el enlace entre el pasado (el drama) y el presente, la búsqueda de reconocimiento de los organizadores y de los que participan, el gusto de los que toman parte como actores, o como espectadores. Todo ello permite que la fiesta, ceremonia o representación continúe por lo que significa no sólo para los de Iztapalapa sino para la nación entera.</p>
+   <center><img src="imagenes/drama.jpg" width="360" height="306"></center>
+  <div data-role="footer" data-theme="a">
+      <h4>oscar lopez flores</h4>
+    </div>
+   </div>
+</div>
+</body>
+</html>
